@@ -52,7 +52,7 @@ class KNNClassifier:
 		"""根据测试数据集 X_test 和 y_test 确定当前模型的准确度"""
 		
 		y_predict = self.predict(X_test)
-		return accuracy_score(y_test, y_predict)
+		return accuracy_score(y_predict, y_test)
 	
 	def __repr__(self):
 		return "KNN(k=%d)" % self.k
